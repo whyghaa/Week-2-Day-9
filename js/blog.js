@@ -8,6 +8,16 @@ function addBlog(event) {
   let endDate = document.getElementById("input-blog-end-date").value;
   let content = document.getElementById("input-blog-desc").value;
   let image = document.getElementById("input-blog-image").files;
+  let checkboxes = document.querySelectorAll(
+    'input[type="checkbox"][name="checkbox"]:checked'
+  );
+
+  const selectedFrameworks = Array.from(checkboxes).map(
+    (checkbox) => checkbox.value
+  );
+  if (selectedFrameworks.length === 0) {
+    return alert("Please choose your Technologies");
+  }
 
   image = URL.createObjectURL(image[0]);
   console.log(image);
@@ -45,17 +55,39 @@ function addBlog(event) {
     duration,
     content,
     image,
+    frameworks: selectedFrameworks,
   };
 
   dataBlog.push(blog);
-  console.log(dataBlog);
-console.log(duration);
+  // console.log(dataBlog);
+  // console.log(duration);
   renderBlog();
 }
 
 function renderBlog() {
   document.getElementById("contents").innerHTML = "";
   for (let index = 0; index < dataBlog.length; index++) {
+    const nameFrameworks = dataBlog[index].frameworks;
+    const iconString = nameFrameworks
+      .map((framework) => {
+        if (dataBlog[index].frameworks.includes(framework)) {
+          switch (framework) {
+            case "React js":
+              return `<i class="fa-brands fa-react"></i>`;
+            case "Node js":
+              return `<i class="fa-brands fa-node-js"></i>`;
+            case "Java":
+              return `<i class="fa-brands fa-java"></i>`;
+            case "PHP":
+              return `<i class="fa-brands fa-php"></i>`;
+            default:
+              return "";
+          }
+        }
+        return "";
+      })
+      .join("");
+
     document.getElementById("contents").innerHTML += `
                 <div class="container-card">
                     <div class="card-content">
@@ -67,12 +99,10 @@ function renderBlog() {
                         </h1>
                         <p>durasi : ${dataBlog[index].duration}</p>
                         <div id="container-desc">
-                        ${dataBlog[index].content}
+                        <p>${dataBlog[index].content}</p>
                         </div>
                         <div>
-                          <i class="fa-brands fa-google-play"></i>
-                          <i class="fa-brands fa-android"></i>
-                          <i class="fa-brands fa-java"></i>
+                        ${iconString}
                         </div>
                         <div class="ctn-btn">
                             <div class="btn-left">
