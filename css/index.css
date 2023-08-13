@@ -7,12 +7,18 @@
 }
 
 /* Navbar */
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
 body {
   margin: 0;
 }
 
 nav {
-  background-color: #ebeaea;
+  background-color: #26292b;
   display: flex;
   align-items: center;
   height: 10vh;
@@ -24,16 +30,20 @@ nav ul {
   align-items: center;
 }
 
-nav ul li {
-  margin-right: 25px;
+nav ul li,
+img {
+  margin-right: 10px;
   font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+nav ul li a {
+  color: white;
+}
 
 nav ul li .active {
-  color: orangered;
+  color: #a2b2ee;
 }
 
 .nav-left {
@@ -47,7 +57,7 @@ nav ul li .active {
 }
 
 .nav-right a {
-  background-color: orangered;
+  background-color: #a2b2ee;
   padding: 8px 20px;
   color: white;
   border-radius: 5px;

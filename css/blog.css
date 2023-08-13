@@ -10,7 +10,7 @@
 a {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: white;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
 }
 
 nav {
-  background-color: #ebeaea;
+  background-color: #26292B;
   display: flex;
   align-items: center;
   height: 10vh;
@@ -32,19 +32,22 @@ nav ul {
 
 nav ul li,
 img {
-  margin-right: 25px;
+  margin-right: 30px;
   font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+nav ul li a {
+  color : white;
+}
 
 nav ul li .active {
-  color: orangered;
+  color: #A2B2EE;
 }
 
 .nav-left {
-  flex: 50%;
+  flex: 100%;
 }
 
 .nav-right {
@@ -54,7 +57,7 @@ nav ul li .active {
 }
 
 .nav-right a {
-  background-color: orangered;
+  background-color: #A2B2EE;
   padding: 8px 20px;
   color: white;
   border-radius: 5px;

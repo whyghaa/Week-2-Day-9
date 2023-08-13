@@ -8,58 +8,60 @@
 
 /* Navbar */
 a {
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    margin-left: 20;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
 }
 
 body {
-    margin: 0;
-    background-color: #dbdbdb;
-  }
-  
-  nav {
-    background-color: #ebeaea;
-    display: flex;
-    align-items: center;
-    height: 10vh;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-  }
-  
-  nav ul li {
-    margin-right: 25px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  nav ul li .active {
-    color: orangered;
-  }
-  
-  .nav-left {
-    flex: 50%;
-  }
-  
-  .nav-right {
-    flex: 50%;
-    text-align: end;
-    margin-right: 25px;
-  }
-  
-  .nav-right a {
-    background-color: orangered;
-    padding: 8px 20px;
-    color: white;
-    border-radius: 5px;
-  }
+  margin: 0;
+}
+
+nav {
+  background-color: #26292B;
+  display: flex;
+  align-items: center;
+  height: 10vh;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav ul li,
+img {
+  margin-right: 30px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li a {
+  color : white;
+}
+
+nav ul li .active {
+  color: #A2B2EE;
+}
+
+.nav-left {
+  flex: 100%;
+}
+
+.nav-right {
+  flex: 50%;
+  text-align: end;
+  margin-right: 25px;
+}
+
+.nav-right a {
+  background-color: #A2B2EE;
+  padding: 8px 20px;
+  color: white;
+  border-radius: 5px;
+}
 
 /* Contact */
 .container-contact {
@@ -119,10 +121,10 @@ input, select{
 }
 
 button {
-    background-color: orangered;
+    background-color: #A2B2EE;
     font-weight: bold;
     border: none;
-    border-radius: 25px;
+    border-radius: 20px;
     width: auto;
     height: 30px;
     cursor: pointer;
