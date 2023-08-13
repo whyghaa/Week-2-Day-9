@@ -248,6 +248,11 @@ select {
 
 .card-content h1 {
     text-align: left;
+    font-size: 20px;
+  }
+
+  .card-content h1 a {
+    color: black ;
     font-size: 15px;
   }
 
@@ -292,11 +297,3 @@ select {
 .ctn-btn button:hover {
     background-color: orangered;
   }
-
-/* .blog-content .card {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 5px;
-    justify-content: center;
-  } */
