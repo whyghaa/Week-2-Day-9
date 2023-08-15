@@ -17,6 +17,8 @@ function submitData() {
     return alert("Message harus diisi!");
   }
 
+  confirm("Is the data you entered correct?");
+
   let emailReceiver = "rangganurwahyu22@gmail.com";
 
   let a = document.createElement("a");

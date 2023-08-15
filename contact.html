@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/contact.css" />
   </head>
   <body>
@@ -16,24 +23,37 @@
               <img src="image/R.png" alt="logo" width="50px" />
             </a>
           </li>
-          <li>
+          <li class="item-collapse">
             <a href="index.html" ">Home</a>
           </li>
-          <li>
+          <li class="item-collapse">
             <a href="blog.html">My Project</a>
           </li>
         </ul>
       </div>
       <div class="nav-right">
-        <a href="contact.html" class="active" >Contact</a>
+        <a href="contact.html" class="item-collapse" >Contact</a>
+      </div>
+      <div class="nav-right id="barsmenu">
+        <button 
+          style="background-color: transparent; border: none; cursor: pointer"
+					onclick="openHamburger();">
+					<i class="fa-2x fa-solid fa-bars" style="color: white"></i></button>
       </div>
     </nav>
+
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+			<a href="index.html" class="hamburger-active">Home</a>
+			<a href="blog.html">Blog</a>
+			<div class="burger-contact">
+				<a href="contact.html">Contact Me</a>
+			</div>
+		</div>
 
     <!-- Contact -->
     <div class="container-contact">
       <form>
         <h1>Get In Touch</h1>
-
         <div>
           <label for="name">Name</label>
           <input type="text" id="name" required />
@@ -68,7 +88,8 @@
           <button type="button" onclick="submitData()">Submit</button>
         </div>
       </form>
-      <script src="js/contact.js"></script>
     </div>
+    <script src="js/contact.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

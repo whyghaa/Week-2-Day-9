@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Detail</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
@@ -20,19 +27,32 @@
               <img src="image/R.png" alt="logo" width="50px" />
             </a>
           </li>
-          <li>
+          <li class="item-collapse">
             <a href="index.html">Home</a>
           </li>
-          <li>
+          <li class="item-collapse">
             <a href="blog.html" class="active">My Project</a>
           </li>
         </ul>
       </div>
       <div class="nav-right">
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="item-collapse">Contact</a>
+      </div>
+      <div class="nav-right id="barsmenu">
+        <button 
+          style="background-color: transparent; border: none; cursor: pointer"
+					onclick="openHamburger();">
+					<i class="fa-2x fa-solid fa-bars" style="color: white"></i></button>
       </div>
     </nav>
 
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+			<a href="index.html" class="hamburger-active">Home</a>
+			<a href="blog.html">Blog</a>
+			<div class="burger-contact">
+				<a href="contact.html">Contact Me</a>
+			</div>
+		</div>
     <!-- Blog Detail -->
     <div class="blog-detail">
       <h1>Mobile App</h1>
@@ -44,7 +64,6 @@
           <div class="duration">
             <h2>Duration</h2>
             <p><i class="bx bxs-calendar"></i>12 Jan 2021 - 11 Feb 2021</p>
-
             <p><i class="bx bx-time-five"></i>1 month</p>
           </div>
           <div class="technologi">
@@ -108,5 +127,6 @@
         </p>
       </div>
     </div>
+    <script src="js/index.js"></script>
   </body>
 </html>

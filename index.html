@@ -20,35 +20,48 @@
               <img src="image/R.png" alt="logo" width="50px"  />
             </a>
           </li>
-          <li>
+          <li class="item-collapse">
             <a href="index.html" class="active">Home</a>
           </li>
-          <li>
+          <li class="item-collapse">
             <a href="blog.html">My Project</a>
           </li>
         </ul>
       </div>
       <div class="nav-right">
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="item-collapse" >Contact</a>
+      </div>
+      </div>
+      <div class="nav-right id="barsmenu">
+        <button 
+          style="background-color: transparent; border: none; cursor: pointer"
+					onclick="openHamburger();">
+					<i class="fa-2x fa-solid fa-bars" style="color: white"></i></button>
       </div>
     </nav>
 
-    <!-- background -->
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+			<a href="index.html" class="hamburger-active">Home</a>
+			<a href="blog.html">Blog</a>
+			<div class="burger-contact">
+				<a href="contact.html">Contact Me</a>
+			</div>
+		</div>
+
+    <!-- card -->
     <div class="container-card">
       <section>
         <div class="left">
           <h1>Hi Welcome to my hut</h1>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged.
+            Introducing my name is Rangga, I live in Cikande Serang, Banten, I
+            am 21 years old and I am currently studying at a well-known
+            university in the South Tangerang area, namely the University
+            Pamulang, I am from the Engineering study program majoring in
+            informatics and I now it's semester 5. For work for now I am
+            currently taking Fullstack Developer training at DumbWays Indonesia.
           </p>
-          <a href="contact.html">
-            <button>Contact</button>
-          </a>
+          <a href="contact.html"><button>Contact</button></a>
           <a href="#">Download CV<i class="fa-solid fa-download"></i></a>
           <div class="sosmed">
             <a class="fa-brands fa-linkedin"></a>
@@ -69,5 +82,6 @@
         </div>
       </section>
     </div>
+    <script src="js/index.js"></script>
   </body>
 </html>

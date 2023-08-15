@@ -90,7 +90,7 @@ button {
 }
 
 button:hover {
-  background-color: orangered;
+  background-color: #a2b2ee;
   box-shadow: 0 0 10px black;
 }
 
@@ -98,7 +98,6 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: black;
-  margin-left: 20;
 }
 
 .sosmed {
@@ -108,7 +107,7 @@ a {
 
 .sosmed a {
   padding-top: 10px;
-  padding-left: 0px;
+  margin: 10px;
 }
 
 .card {
@@ -146,4 +145,106 @@ section {
 .right {
   flex: 30%;
   margin-left: 50px;
+}
+
+#barsmenu {
+  display: none;
+}
+
+.hamburger {
+	display: none;
+}
+
+.hamburger a {
+	color: #000;
+}
+
+.hamburger-nav-container {
+  font-size: 20px;
+  list-style-type: none;
+  background-color: #dbdbdb;
+  padding-bottom: 15px;
+	padding-top: 15px;
+  display: none;
+}
+
+.hamburger-nav-container a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: none;
+}
+
+.hamburger-nav-container .hamburger-active {
+  text-decoration: none;
+  color: #a2b2ee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.burger-contact  {
+  background-color: #a2b2ee;
+	margin: 0px auto;
+	width: 200px;
+	text-align: center;
+	padding: 0px 50px;
+	color: white;
+	border-radius: 10px;
+}
+
+.burger-contact:hover {
+  background-color: #26292b;
+}
+
+@media only screen and (max-width: 900px) {
+  .container-card {
+    width: 95%;
+    margin: 20px auto;
+  }
+
+  section {
+    display: block;
+  }
+
+  .right {
+    display: flex;
+    margin: 10px auto;
+  }
+
+  .item-collapse {
+		display: none;
+	}
+
+  #barsmenu {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+  .container-card {
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  section {
+    display: block;
+  }
+
+  .right {
+    display: flex;
+    margin: 10px auto;
+  }
+
+  .item-collapse {
+		display: none;
+	}
+
+  #barsmenu {
+		display: block;
+	}
 }

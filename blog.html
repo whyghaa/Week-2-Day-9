@@ -20,19 +20,32 @@
               <img src="image/R.png" alt="logo" width="50px" margin="0px 10px 0px 0px" />
             </a>
           </li>
-          <li>
+          <li class="item-collapse">
             <a href="index.html">Home</a>
           </li>
-          <li>
+          <li class="item-collapse">
             <a href="#" class="active">My Project</a>
           </li>
         </ul>
       </div>
       <div class="nav-right">
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="item-collapse">Contact</a>
+      </div>
+      <div class="nav-right id="barsmenu">
+        <button 
+          style="background-color: transparent; border: none; cursor: pointer"
+					onclick="openHamburger();">
+					<i class="fa-2x fa-solid fa-bars" style="color: white"></i></button>
       </div>
     </nav>
-
+    
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+			<a href="index.html" >Home</a>
+			<a href="blog.html" class="hamburger-active">Blog</a>
+			<div class="burger-contact">
+				<a href="contact.html">Contact Me</a>
+			</div>
+		</div>
     <!-- blog -->
     <!-- form -->
     <div class="blog">
@@ -164,5 +177,6 @@
       </div>
     </div>
     <script src="js/blog.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

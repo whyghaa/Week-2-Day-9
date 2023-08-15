@@ -134,3 +134,91 @@ button:hover {
     background-color: black;
     color: white;
 }
+
+
+#barsmenu {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger a {
+  color: #000;
+}
+
+.hamburger-nav-container {
+  font-size: 20px;
+  list-style-type: none;
+  background-color: #dbdbdb;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  display: none;
+}
+
+.hamburger-nav-container a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: none;
+}
+
+.hamburger-nav-container .hamburger-active {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.burger-contact {
+  background-color: #a2b2ee;
+  margin: 0px auto;
+  width: 200px;
+  text-align: center;
+  padding: 0px 50px;
+  color: white;
+  border-radius: 10px;
+}
+
+.burger-contact:hover {
+  background-color: #26292b;
+}
+
+@media only screen and (max-width: 900px) {
+  .container-contact {
+    width: 95%;
+  }
+
+  form {
+    width: 75%;
+    margin: 20px auto;
+  }
+
+  .item-collapse {
+    display: none;
+  }
+
+  #barsmenu {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .container-contact {
+    width: 90%;
+  }
+
+  .item-collapse {
+    display: none;
+  }
+
+  #barsmenu {
+    display: block;
+  }
+}
