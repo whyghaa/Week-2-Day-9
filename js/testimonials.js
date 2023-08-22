@@ -110,7 +110,7 @@ const testimonialData = [
     rating: 4,
   },
   {
-    author: "Hasel",
+    author: "Wendy",
     quote: "Yuk bisa yuk!",
     image: "image/cyber2.jpg",
     rating: 4,
@@ -129,7 +129,7 @@ const testimonialData = [
   },
   {
     author: "Fahmi",
-    quote: "Kebiasaan jangan kauya gitu!",
+    quote: "Kebiasaan jangan kaya gitu!",
     image: "image/cyber5.jpg",
     rating: 1,
   },

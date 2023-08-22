@@ -1,5 +1,5 @@
 // class
-class motorcycle {
+class Motorcycle {
     constructor(name,model) {
         this.name = name;
         this.model = model;
@@ -12,8 +12,8 @@ class motorcycle {
 
 // oobject
 
-let motorcycle1 =new motorcycle("Suzuki", "Klx");
-const motorcycle2 = new motorcycle("Yamaha", "Crf")
+let Motorcycle1 = new Motorcycle("Suzuki", "Klx");
+const Motorcycle2 = new Motorcycle("Yamaha", "Crf")
 
-console.log (motorcycle1.getInfo());
-console.log (motorcycle2.getInfo());
+console.log (Motorcycle1.getInfo());
+console.log (Motorcycle2.getInfo());
